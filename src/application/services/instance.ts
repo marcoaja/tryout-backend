@@ -17,4 +17,4 @@ container.bind(QuestionServices).toSelf();
 // instances
 export const tryoutServices = container.get<TryoutServices>(TryoutServices);
 export const questionServices =
-  container.get<QuestionServices>(QuestionServices);
+	container.get<QuestionServices>(QuestionServices);
