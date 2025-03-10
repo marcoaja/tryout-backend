@@ -1,15 +1,50 @@
-# Elysia with Bun runtime
+# Tryout Backend
 
-## Getting Started
-To get started with this template, simply paste this command into your terminal:
+## Requirements
+
+Pastikan Bun sudah terinstal:
+
+- [Bun](https://bun.sh/) (Runtime JavaScript)
+
+## Instalasi
+
+### 1. Clone Repository
+
 ```bash
-bun create elysia ./elysia-example
+git clone https://github.com/marcoaja/tryout-backend
 ```
 
-## Development
-To start the development server run:
+### 2. Instal Dependensi
+
+```bash
+bun install
+```
+
+### 3. Konfigurasi Environment
+
+Buat file `.env` di root proyek dan isi dengan konfigurasi database:
+
+```env
+DATABASE_URL="..."
+DIRECT_URL="..."
+```
+
+### 4. Jalankan Server
+
+Untuk menjalankan server:
+
 ```bash
 bun run dev
 ```
 
-Open http://localhost:3000/ with your browser to see the result.
+Server akan berjalan di: **http://localhost:8000/**
+
+## Documentation
+
+Untuk melihat dokumentasi API:
+**http://localhost:8000/docs**
+
+## Command Tambahan
+
+- **Lint kode:** `bun run lint`
+- **Format kode:** `bun run format`
